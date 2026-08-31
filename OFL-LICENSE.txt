@@ -1,0 +1,10 @@
+Copyright (c) 2026, RV (Fjellrune Project)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://openfontlicense.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the Font Software, to use, study, copy, merge, embed, modify, redistribute,
+and sell modified and unmodified copies of the Font Software, subject to the
+conditions of the SIL Open Font License, Version 1.1. See the full license
+text at https://openfontlicense.org/open-font-license-official-text/
