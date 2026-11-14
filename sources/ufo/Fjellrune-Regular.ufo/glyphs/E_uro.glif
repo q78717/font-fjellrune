@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Euro" format="2">
+  <advance width="588"/>
+  <unicode hex="20AC"/>
+  <outline>
+    <contour>
+      <point x="544" y="611" type="line"/>
+      <point x="531" y="688" type="line"/>
+      <point x="243" y="704" type="line"/>
+      <point x="145" y="457" type="line"/>
+      <point x="44" y="457" type="line"/>
+      <point x="66" y="393" type="line"/>
+      <point x="120" y="393" type="line"/>
+      <point x="103" y="350" type="line"/>
+      <point x="120" y="307" type="line"/>
+      <point x="44" y="307" type="line"/>
+      <point x="66" y="243" type="line"/>
+      <point x="145" y="243" type="line"/>
+      <point x="243" y="-4" type="line"/>
+      <point x="531" y="12" type="line"/>
+      <point x="544" y="89" type="line"/>
+      <point x="287" y="74" type="line"/>
+      <point x="220" y="243" type="line"/>
+      <point x="394" y="243" type="line"/>
+      <point x="416" y="307" type="line"/>
+      <point x="194" y="307" type="line"/>
+      <point x="177" y="350" type="line"/>
+      <point x="194" y="393" type="line"/>
+      <point x="424" y="393" type="line"/>
+      <point x="446" y="457" type="line"/>
+      <point x="220" y="457" type="line"/>
+      <point x="287" y="626" type="line"/>
+    </contour>
+  </outline>
+</glyph>

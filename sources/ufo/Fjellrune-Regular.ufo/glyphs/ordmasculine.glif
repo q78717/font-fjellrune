@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ordmasculine" format="2">
+  <advance width="368"/>
+  <unicode hex="00BA"/>
+  <outline>
+    <contour>
+      <point x="172" y="674" type="line"/>
+      <point x="52" y="600" type="line"/>
+      <point x="52" y="428" type="line"/>
+      <point x="172" y="354" type="line"/>
+      <point x="291" y="428" type="line"/>
+      <point x="291" y="600" type="line"/>
+    </contour>
+    <contour>
+      <point x="172" y="623" type="line"/>
+      <point x="244" y="579" type="line"/>
+      <point x="244" y="450" type="line"/>
+      <point x="172" y="405" type="line"/>
+      <point x="100" y="450" type="line"/>
+      <point x="100" y="579" type="line"/>
+    </contour>
+    <contour>
+      <point x="44" y="313" type="line"/>
+      <point x="64" y="257" type="line"/>
+      <point x="304" y="257" type="line"/>
+      <point x="324" y="313" type="line"/>
+    </contour>
+  </outline>
+</glyph>

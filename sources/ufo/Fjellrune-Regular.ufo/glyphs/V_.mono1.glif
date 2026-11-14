@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="V.mono1" format="2">
+  <outline>
+    <contour>
+      <point x="-580" y="576" type="line"/>
+      <point x="-626" y="548" type="line"/>
+      <point x="-485" y="124" type="line"/>
+      <point x="-435" y="124" type="line"/>
+      <point x="-294" y="548" type="line"/>
+      <point x="-340" y="576" type="line"/>
+      <point x="-460" y="214" type="line"/>
+    </contour>
+  </outline>
+</glyph>

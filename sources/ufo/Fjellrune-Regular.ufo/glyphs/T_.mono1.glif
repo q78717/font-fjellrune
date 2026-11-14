@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="T.mono1" format="2">
+  <outline>
+    <contour>
+      <point x="-622" y="519" type="line"/>
+      <point x="-593" y="475" type="line"/>
+      <point x="-489" y="515" type="line"/>
+      <point x="-489" y="139" type="line"/>
+      <point x="-431" y="119" type="line"/>
+      <point x="-431" y="515" type="line"/>
+      <point x="-327" y="475" type="line"/>
+      <point x="-298" y="519" type="line"/>
+      <point x="-460" y="581" type="line"/>
+    </contour>
+  </outline>
+</glyph>

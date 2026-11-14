@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="M.mono3c" format="2">
+  <outline>
+    <contour>
+      <point x="-568" y="215" type="line"/>
+      <point x="-534" y="227" type="line"/>
+      <point x="-534" y="417" type="line"/>
+      <point x="-460" y="293" type="line"/>
+      <point x="-386" y="417" type="line"/>
+      <point x="-386" y="227" type="line"/>
+      <point x="-352" y="215" type="line"/>
+      <point x="-352" y="477" type="line"/>
+      <point x="-383" y="485" type="line"/>
+      <point x="-460" y="354" type="line"/>
+      <point x="-537" y="485" type="line"/>
+      <point x="-568" y="477" type="line"/>
+    </contour>
+  </outline>
+</glyph>

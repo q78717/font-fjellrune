@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="J.mono3r" format="2">
+  <outline>
+    <contour>
+      <point x="-178" y="489" type="line"/>
+      <point x="-212" y="477" type="line"/>
+      <point x="-212" y="288" type="line"/>
+      <point x="-269" y="250" type="line"/>
+      <point x="-307" y="284" type="line"/>
+      <point x="-332" y="265" type="line"/>
+      <point x="-272" y="211" type="line"/>
+      <point x="-178" y="274" type="line"/>
+    </contour>
+  </outline>
+</glyph>

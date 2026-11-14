@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="monogram.ring" format="2">
+  <advance width="920"/>
+  <outline>
+    <contour>
+      <point x="296" y="778" type="line"/>
+      <point x="197" y="679" type="line"/>
+      <point x="190" y="649" type="line"/>
+      <point x="160" y="642" type="line"/>
+      <point x="32" y="514" type="line"/>
+      <point x="32" y="186" type="line"/>
+      <point x="131" y="87" type="line"/>
+      <point x="161" y="80" type="line"/>
+      <point x="168" y="50" type="line"/>
+      <point x="296" y="-78" type="line"/>
+      <point x="624" y="-78" type="line"/>
+      <point x="723" y="21" type="line"/>
+      <point x="730" y="51" type="line"/>
+      <point x="760" y="58" type="line"/>
+      <point x="888" y="186" type="line"/>
+      <point x="888" y="514" type="line"/>
+      <point x="789" y="613" type="line"/>
+      <point x="759" y="620" type="line"/>
+      <point x="752" y="650" type="line"/>
+      <point x="624" y="778" type="line"/>
+    </contour>
+    <contour>
+      <point x="314" y="712" type="line"/>
+      <point x="606" y="712" type="line"/>
+      <point x="822" y="496" type="line"/>
+      <point x="822" y="204" type="line"/>
+      <point x="606" y="-12" type="line"/>
+      <point x="314" y="-12" type="line"/>
+      <point x="98" y="204" type="line"/>
+      <point x="98" y="496" type="line"/>
+    </contour>
+  </outline>
+</glyph>

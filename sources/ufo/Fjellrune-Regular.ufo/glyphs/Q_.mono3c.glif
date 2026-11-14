@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Q.mono3c" format="2">
+  <outline>
+    <contour>
+      <point x="-466" y="505" type="line"/>
+      <point x="-563" y="432" type="line"/>
+      <point x="-563" y="288" type="line"/>
+      <point x="-466" y="215" type="line"/>
+      <point x="-426" y="246" type="line"/>
+      <point x="-386" y="195" type="line"/>
+      <point x="-357" y="209" type="line"/>
+      <point x="-401" y="264" type="line"/>
+      <point x="-370" y="288" type="line"/>
+      <point x="-370" y="432" type="line"/>
+    </contour>
+    <contour>
+      <point x="-466" y="466" type="line"/>
+      <point x="-404" y="419" type="line"/>
+      <point x="-404" y="301" type="line"/>
+      <point x="-420" y="289" type="line"/>
+      <point x="-439" y="312" type="line"/>
+      <point x="-459" y="287" type="line"/>
+      <point x="-445" y="270" type="line"/>
+      <point x="-466" y="254" type="line"/>
+      <point x="-529" y="301" type="line"/>
+      <point x="-529" y="419" type="line"/>
+    </contour>
+  </outline>
+</glyph>

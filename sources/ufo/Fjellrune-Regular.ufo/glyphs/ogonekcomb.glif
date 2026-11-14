@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ogonekcomb" format="2">
+  <unicode hex="0328"/>
+  <anchor x="-220" y="-25" name="_ogonek"/>
+  <outline>
+    <contour>
+      <point x="-194" y="-5" type="line"/>
+      <point x="-244" y="8" type="line"/>
+      <point x="-306" y="-115" type="line"/>
+      <point x="-209" y="-212" type="line"/>
+      <point x="-126" y="-164" type="line"/>
+      <point x="-141" y="-114" type="line"/>
+      <point x="-201" y="-148" type="line"/>
+      <point x="-244" y="-105" type="line"/>
+    </contour>
+  </outline>
+</glyph>
