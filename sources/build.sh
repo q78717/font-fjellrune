@@ -5,6 +5,9 @@
 #   3. the specimen page is rebuilt and the bind-rune medallion feature is smoke-tested
 set -euo pipefail
 cd "$(dirname "$0")/.."
+if [ -d "venv/bin" ]; then
+  export PATH="$PWD/venv/bin:$PATH"
+fi
 python3 sources/build_fjellrune.py --ufo sources/ufo
 (cd sources && gftools builder config.yaml)
 python3 sources/tools/add_stat.py fonts/ttf fonts/webfonts
