@@ -203,6 +203,30 @@ footer a { color: inherit; }
 footer { border-top: 1px solid var(--rule); font-family: var(--f-mono); font-size: var(--step--1); color: var(--muted); }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
 </style>
+<style id="rv-theme-toggle">
+.rv-toggle { position: fixed; top: 16px; right: 16px; z-index: 50; width: 40px; height: 40px;
+  display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--rule);
+  border-radius: 6px; background: var(--paper); color: var(--denim); cursor: pointer; }
+.rv-toggle:hover { color: var(--red); }
+.rv-toggle:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.rv-toggle svg { width: 20px; height: 20px; fill: currentColor; }
+.rv-toggle .sun { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .rv-toggle .sun { display: block; }
+  :root:not([data-theme="light"]) .rv-toggle .moon { display: none; }
+}
+:root[data-theme="dark"] .rv-toggle .sun { display: block; }
+:root[data-theme="dark"] .rv-toggle .moon { display: none; }
+/* Inside q-rv.github.io the site header's toggle drives the theme. */
+.rv-embedded .rv-toggle { display: none; }
+</style>
+<script>
+(function () {
+  var r = document.documentElement;
+  if (window.self !== window.top) r.classList.add("rv-embedded");
+  else { try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") r.setAttribute("data-theme", t); } catch (e) {} }
+})();
+</script>
 </head>
 <body>
 
@@ -533,13 +557,28 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: s
 })();
 </script>
 <script>
-// When embedded in q-rv.github.io, follow the wrapper's light/dark toggle.
-window.addEventListener("message", function (e) {
-  if (e.origin !== "https://q-rv.github.io" || !e.data || e.data.type !== "rv-theme") return;
-  var t = e.data.theme;
-  if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-  else document.documentElement.removeAttribute("data-theme");
-});
+// Light/dark toggle; when embedded in q-rv.github.io, follow the wrapper's toggle instead.
+(function () {
+  var r = document.documentElement;
+  function effective() {
+    return r.getAttribute("data-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }
+  var b = document.createElement("button");
+  b.className = "rv-toggle"; b.type = "button"; b.setAttribute("aria-label", "Toggle light and dark mode");
+  b.innerHTML = '<svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>';
+  b.addEventListener("click", function () {
+    var next = effective() === "dark" ? "light" : "dark";
+    r.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+  document.body.appendChild(b);
+  window.addEventListener("message", function (e) {
+    if (e.origin !== "https://q-rv.github.io" || !e.data || e.data.type !== "rv-theme") return;
+    var t = e.data.theme;
+    if (t === "light" || t === "dark") r.setAttribute("data-theme", t);
+    else r.removeAttribute("data-theme");
+  });
+})();
 </script>
 </body>
 </html>
