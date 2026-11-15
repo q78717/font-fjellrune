@@ -175,7 +175,7 @@ h1.display {
 .futhark-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
 .futhark-card { background: var(--panel); border: 1px solid var(--rule); padding: 12px 8px; text-align: center; display: grid; gap: 4px; }
 .futhark-card .r { font-family: var(--f-display); font-size: 48px; line-height: 1.1; color: var(--ink); }
-.futhark-card .nm { font-family: var(--f-mono); font-size: 0.72rem; color: var(--red); text-transform: uppercase; letter-spacing: 0.06em; }
+.futhark-card .nm { font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
 .futhark-card .cp { font-family: var(--f-mono); font-size: 0.68rem; color: var(--muted); }
 
 /* ---------- waterfall ---------- */
@@ -578,6 +578,10 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: s
     if (t === "light" || t === "dark") r.setAttribute("data-theme", t);
     else r.removeAttribute("data-theme");
   });
+  // Ask the wrapper for its theme once listening, so frame load timing can't drop it.
+  if (r.classList.contains("rv-embedded")) {
+    try { window.parent.postMessage({ type: "rv-theme-ready" }, "https://q-rv.github.io"); } catch (e) {}
+  }
 })();
 </script>
 </body>
